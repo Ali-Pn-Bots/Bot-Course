@@ -339,6 +339,99 @@
 #     print(f.read())
 
 
+# def greet(message= "Hello"):
+#     name = input("What is your name ? ")
+#     print(f"{message},{name}!")
+# greet()
+
+
+# text = "My,Name,Is,Hesam"
+#
+# print(text.strip()) # حذف فاصله از اول و اخر متن
+#
+# words = text.strip().split(",")
+# print(words)
+#
+# print(text.replace("Hesam","Ali"))
+#
+# print("-".join(words))
+
+# def Factorial(n):
+#     p = 1
+#     for i in range(1,n+1):
+#         p *= i
+#     print(p)
+# Factorial(0)
+
+# squares = [x * 2 for x in range(5)]
+# print(squares)
+#
+# # با شرط (فقط اعداد زوج):
+# even_squares = [x for x in range(10) if x % 2 == 0]
+# print(even_squares)
+
+# def clean_text(text):
+#     return text.strip().lower()
+# def count_words(text):
+#     words = text.split()
+#     return len(words)
+# def find_long_words(text,min_length = 4):
+#     words = text.split()
+#     return[word for word in words if len(word) >= min_length]
+#
+# text = input("Type Your Text : ")
+# cleaned = clean_text(text)
+# count = count_words(cleaned)
+# long_words = find_long_words(cleaned, 4)
+# print("Cleaned text : ",clean_text(text))
+# print("Word Count : ",count_words(cleaned))
+# print("Long words:",long_words)
+
+# ۱. تعریف نقشه (Class)
+# class User:
+#     # تابع __init__ همون لحظه‌ای اجرا میشه که یک کاربر جدید می‌سازیم (مثل تولد)
+#     def __init__(self, username, age):
+#         self.username = username  # self یعنی "خود همین کاربر"
+#         self.age = age
+#
+#     # این یک "متد" (Method) هست. مثل یک تابع، ولی مال همین کلاسه
+#     def introduce(self):
+#         return f"Hi, I am {self.username} and I am {self.age} years old."
+#
+# # ۲. ساخت آبجکت‌ها (ساختن ساختمان از روی نقشه)
+# user1 = User("Ali", 25)
+# user2 = User("Sara", 22)
+#
+# # ۳. استفاده از متدها
+# print(user1.introduce())  # Hi, I am Ali and I am 25 years old.
+# print(user2.introduce())  # Hi, I am Sara and I am 22 years old.
+
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner = owner
+#         self.balance = balance
+#
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(f"{amount} deposited. New balance : {self.balance}")
+#
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             print("Insufficient funds!")
+#         else:
+#             self.balance -= amount
+#             print(f"{amount} withdrawn. New balance : {self.balance}")
+#
+#     def show_balance(self):
+#         print(f"Account owner: {self.owner} | Balance : {self.balance}")
+#
+# # --- اجرای برنامه ---
+# my_account = BankAccount("Hesam",700)
+# my_account.show_balance()  # Account owner: Ali | Balance: 0
+#
+# my_account.deposit(500)
+# my_account.withdraw(200)
+# my_account.withdraw(1000)
 
 
 
